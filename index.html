@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSONPlaceholder + Axios</title>
+</head>
+<body>
+  <main>
+    <h1>JSONPlaceholder com Axios</h1>
+
+    <section aria-labelledby="t-lista">
+      <h2 id="t-lista">Primeiros 5 posts</h2>
+      <div id="lista-loading" class="loading" role="status" hidden>
+        <span class="spinner"></span> Carregando posts…
+      </div>
+      <div id="lista-erro" class="msg error" role="alert" hidden></div>
+      <div id="lista"></div>
+    </section>
+
+    <section aria-labelledby="t-form">
+      <h2 id="t-form">Criar novo post</h2>
+      <form id="form">
+        <label>Título
+          <input id="titulo" required maxlength="120">
+        </label>
+        <label>Conteúdo
+          <textarea id="corpo" rows="4" required></textarea>
+        </label>
+        <button id="enviar" type="submit">Publicar post</button>
+      </form>
+      <div id="form-msg" class="msg" role="status" hidden></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
